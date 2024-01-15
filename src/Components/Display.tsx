@@ -49,6 +49,7 @@ const Display: React.FC = () => {
                 <td>{forecast.temperatureC}</td>
                 <td>{forecast.temperatureF}</td>
                 <td>{forecast.summary}</td>
+                 <td>Hello</td>
               </tr>
             ))}
           </tbody>
