@@ -15,7 +15,7 @@ const Display: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:44362/WeatherForecast');
+        const response = await axios.get('http://10.33.2.207:44362/WeatherForecast');
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
