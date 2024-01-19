@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import LinkPage from 'src/Components/LinkPage.tsx';
+import LinkPage from '../Components/LinkPage.tsx';
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
