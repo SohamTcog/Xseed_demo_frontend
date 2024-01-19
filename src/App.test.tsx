@@ -21,13 +21,21 @@ import LinkPage from './Components/LinkPage';
 // });
 
 
-test('renders LinkPage component', () => {
-  const { getByText } = render(
-    <Router>
-      <LinkPage />
-    </Router>
-  );
+describe('LinkPage component', () => {
+  test('renders Display component when "Data" link is clicked', async () => {
+    render(
+      <Router>
+        <LinkPage />
+      </Router>
+    );
 
-  const linkElement = getByText(/Data/i);
-  expect(linkElement).toBeInTheDocument();
+    // Click on the link
+    fireEvent.click(screen.getByText('Data'));
+
+    // Wait for the asynchronous code to finish (you can adjust the time if needed)
+    await screen.findByText('Weather Forecast');
+
+    // Check if the Display component is rendered
+    expect(screen.getByText('Weather Forecast')).toBeInTheDocument();
+  });
 });
