@@ -24,6 +24,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "testMatch": ["C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Xseed_demo_frontend\\src\\App.test.tsx"]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
